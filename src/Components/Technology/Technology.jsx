@@ -1,6 +1,7 @@
 import React from "react";
 import "./Technology.css";
 import Card from "../Card/Card";
+import Line from "../Line/Line";
 
 const cardsContent = [
   {
@@ -24,7 +25,7 @@ function Technology() {
   return (
     <div className="Technology">
       <h2>Our Technology</h2>
-      <div className="central-line"></div>
+      <Line width={"3%"} borderWidth={"4px"} color={"#003E75"} />
       <div className="key-features">
         {cardsContent.map((item, index) => {
           return <Card data={item} key={index} />;
