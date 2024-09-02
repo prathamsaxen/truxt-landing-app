@@ -1,0 +1,76 @@
+.Contact{
+    padding: 30px;
+    background:url("../../assets/contact/request_bg_image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.contact-form{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* align-items: center; */
+}
+
+.half{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    input{
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+    }
+    textarea{
+        width: 100%;
+        padding: 10px;
+        resize: none;
+        height: 100%;
+        border-bottom: 2px solid black;
+        outline: none;
+    }
+    .pincode-input{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        input{
+            width: 100%;
+            outline: none;
+        }
+    }
+}
+
+.submit-button-container{
+/* red; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        background-color: #003E75;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
