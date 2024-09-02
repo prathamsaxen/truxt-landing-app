@@ -10,4 +10,15 @@ function Card({data}) {
   )
 }
 
-export default Card
+function VisionCard({data}){
+  return(
+    <div className='vision-card'>
+      <img src={data.logo} alt="Error in loading" />
+      <h3>{data.title}</h3>
+      <p>{data.content}</p>
+    </div>
+  )
+}
+
+export {VisionCard};
+export default Card;

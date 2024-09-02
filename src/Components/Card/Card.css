@@ -11,3 +11,22 @@
         width: 90%;
     }
 }
+
+.vision-card{
+    /* border: 2px solid red; */
+    width: 30%;
+    img{
+        width: 20%;
+    }
+    h3{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #6FBBE9;
+        margin-bottom: 5px;
+
+    }
+    p{
+        color: white;
+        line-height: 25px;
+    }
+}

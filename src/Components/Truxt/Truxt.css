@@ -1,7 +1,6 @@
 .Truxt{
     padding-top: 30px;
     padding-bottom: 30px;
-    /* border: 2px solid red; */
     background: url("../../assets/truxt/meet_truxt_image.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,8 +11,11 @@
     }
 
     .vision-container{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-top: 30px;
         padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
     }
 }
