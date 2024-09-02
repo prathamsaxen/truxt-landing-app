@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Contact.css";
 import Line from "../Line/Line";
+import ReferenceContext from "../../Context/ReferenceContext";
 
-function Contact() {
+const Contact = React.forwardRef(() => {
+  const { ContactRef } = useContext(ReferenceContext);
   return (
-    <div className="Contact" id="contact-section">
+    <div className="Contact" ref={ContactRef} id="contact-section">
       <h2>Request Demo</h2>
       <Line width={"3%"} borderWidth={"4px"} color={"#003E75"} />
-
       <div className="contact-form">
         <div className="half">
-          <input type="text" placeholder="Name"/>
+          <input type="text" placeholder="Name" />
           <textarea name="" id="" placeholder="Subject"></textarea>
         </div>
         <div className="half">
-          <input type="mail" placeholder="Email"/>
-          <input type="text" placeholder="Address Line 1"/>
-          <input type="mail" placeholder="Address Line 2"/>
-            <div className="pincode-input">
-              <input type="number" name="" id="" placeholder="Pin"/>
-              <input type="number" placeholder="Phone +44"/>
-            </div>
+          <input type="mail" placeholder="Email" />
+          <input type="text" placeholder="Address Line 1" />
+          <input type="mail" placeholder="Address Line 2" />
+          <div className="pincode-input">
+            <input type="number" name="" id="" placeholder="Pin" />
+            <input type="number" placeholder="Phone +44" />
+          </div>
         </div>
       </div>
       <div className="submit-button-container">
@@ -28,6 +29,6 @@ function Contact() {
       </div>
     </div>
   );
-}
+});
 
 export default Contact;

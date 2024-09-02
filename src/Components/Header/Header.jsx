@@ -1,42 +1,52 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../assets/header/truxt_logo_login.png";
+import ReferenceContext from "../../Context/ReferenceContext";
 
-const NavigationItems = [
-  {
-    path: "/",
-    title: "Home",
-  },
-  {
-    path: "/",
-    title: "Product",
-  },
-  {
-    path: "/",
-    title: "About",
-  },
-  {
-    path: "/",
-    title: "Request Demo",
-  },
-  {
-    path: "#contact-section",
-    title: "Contact",
-  },
-];
+
 
 function Header() {
+  const { HomeRef, ProductRef, AboutRef, ContactRef } = useContext(ReferenceContext);
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const NavigationItems = [
+    {
+      path: HomeRef,
+      title: "Home",
+    },
+    {
+      path: ProductRef,
+      title: "Product",
+    },
+    {
+      path: AboutRef,
+      title: "About",
+    },
+    {
+      path: ContactRef,
+      title: "Request Demo",
+    },
+    {
+      path: ContactRef,
+      title: "Contact",
+    },
+  ];
+
   return (
     <div className="Header">
-      {/* <div className="header-logo"> */}
-        <img src={logo} alt="Error in loading..." />
-      {/* </div> */}
+      <img
+        src={logo}
+        alt="Error in loading..."
+      />
       <nav>
         {NavigationItems.map((item, index) => {
           return (
-            <a href={item.path} key={index}>
+            <p onClick={()=>scrollToSection(item.path)} key={index}>
               {item.title}
-            </a>
+            </p>
           );
         })}
       </nav>

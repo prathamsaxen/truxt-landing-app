@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Truxt.css";
 import Line from "../Line/Line";
 import vision_image from "../../assets/truxt/our_vision_icon.svg";
 import story_image from "../../assets/truxt/our_story_icon.svg";
 import technology_image from "../../assets/truxt/our_technology_icon.svg";
 import { VisionCard } from "../Card/Card";
+import ReferenceContext from "../../Context/ReferenceContext";
 
 const VisionContent = [
   {
@@ -28,8 +29,9 @@ const VisionContent = [
 ];
 
 function Truxt() {
+  const { AboutRef } = useContext(ReferenceContext);
   return (
-    <div className="Truxt">
+    <div className="Truxt" ref={AboutRef}>
       <h2>MEET TRUXT</h2>
       <Line width={"3%"} borderWidth={"4px"} color={"white"} />
       <div className="vision-container">
