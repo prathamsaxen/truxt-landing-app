@@ -4,7 +4,7 @@ import Line from "../Line/Line";
 
 function Contact() {
   return (
-    <div className="Contact">
+    <div className="Contact" id="contact-section">
       <h2>Request Demo</h2>
       <Line width={"3%"} borderWidth={"4px"} color={"#003E75"} />
 

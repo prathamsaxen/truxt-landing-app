@@ -16,4 +16,34 @@
         /* align-items: center; */
         gap: 40px;
     }
+
+    .tech-arch{
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+
+    .btn-container{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        button{
+            background-color: #003E75;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 15px 40px;
+            border-radius: 20px;
+            font-weight: 600;
+            font: 1em sans-serif;
+            cursor: pointer;
+        }
+    }
+    padding-bottom: 50px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Technology.css";
 import Card from "../Card/Card";
 import Line from "../Line/Line";
+import arch_diagram from "../../assets/technology/tech_architecture.png";
 
 const cardsContent = [
   {
@@ -30,6 +31,12 @@ function Technology() {
         {cardsContent.map((item, index) => {
           return <Card data={item} key={index} />;
         })}
+      </div>
+      <div className="tech-arch">
+        <img src={arch_diagram} alt="Error in loading..." />
+      </div>
+      <div className="btn-container">
+        <button>Request a Demo</button>
       </div>
     </div>
   );

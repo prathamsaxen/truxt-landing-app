@@ -20,7 +20,7 @@ const NavigationItems = [
     title: "Request Demo",
   },
   {
-    path: "/",
+    path: "#contact-section",
     title: "Contact",
   },
 ];
