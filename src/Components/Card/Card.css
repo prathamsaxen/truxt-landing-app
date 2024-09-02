@@ -1,0 +1,13 @@
+.card{
+    /* border: 2px solid red; */
+    h3{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #6FBBE9;
+        margin-bottom: 5px;
+    }
+    p{
+        line-height: 20px;
+        width: 90%;
+    }
+}
