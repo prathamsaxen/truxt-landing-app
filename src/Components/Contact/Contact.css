@@ -46,7 +46,7 @@
         outline: none;
     }
     .pincode-input{
-        display: flex;
+        display: flex !important;
         gap: 20px;
         width: 100%;
         input{
