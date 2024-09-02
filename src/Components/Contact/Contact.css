@@ -42,6 +42,7 @@
         padding: 12px;
         resize: none;
         height: 100%;
+        border: none;
         border-bottom: 2px solid black;
         outline: none;
     }
