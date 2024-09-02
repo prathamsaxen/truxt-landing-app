@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import logo from "../../assets/header/Truxt_logo_dark.png";
 
 const NavigationItems = [
   {
@@ -28,7 +29,7 @@ function Header() {
   return (
     <div className="Header">
       <div className="header-logo">
-        <img src="" alt="Error in loading..." />
+        <img src={logo} alt="Error in loading..." />
       </div>
       <nav>
         {NavigationItems.map((item, index) => {

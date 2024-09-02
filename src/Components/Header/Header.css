@@ -1,5 +1,35 @@
 .Header{
     /* border: 2px solid red; */
     background-color: #003E75;
-    height: 50px;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        a{
+            color: #54D6FF;
+            text-decoration: none;
+            padding: 4px;
+            border: 2px solid transparent;
+            font-weight: 500;
+        }
+        a:hover{
+            /* text-decoration: underline; */
+            border-bottom: 2px solid white;
+            color: white;
+        }
+    }
+    button{
+        background-color: #54D6FF;
+        color: white;
+        padding: 6px 20px;
+        border: none;
+        border-radius: 12px;
+        font-weight: 600;
+    }
 }
