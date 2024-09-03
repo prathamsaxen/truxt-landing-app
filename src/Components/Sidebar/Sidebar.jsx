@@ -1,17 +1,19 @@
 import React, { useContext } from "react";
-import "./Header.css";
-import logo from "../../assets/header/truxt_logo_login.png";
+import "./Sidebar.css";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 import ReferenceContext from "../../Context/ReferenceContext";
-import { GiHamburgerMenu } from "react-icons/gi";
 
-
-
-function Header({setSidebarDisplay}) {
+function Sidebar({ setSidebarDisplay }) {
   const { HomeRef, ProductRef, AboutRef, ContactRef } = useContext(ReferenceContext);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const scrollFunction=(input)=>{
+    scrollToSection(input);
+    setSidebarDisplay(false);
+  }
 
   const NavigationItems = [
     {
@@ -37,26 +39,23 @@ function Header({setSidebarDisplay}) {
   ];
 
   return (
-    <div className="Header">
-      <img
-        src={logo}
-        alt="Error in loading..."
-      />
-      <nav>
+    <div className="Sidebar">
+      <div className="crossIcon">
+        {/* <p>Truxt</p> */}
+        <IoMdCloseCircleOutline onClick={() => setSidebarDisplay(false)} />
+      </div>
+
+      <div className="navigation-links">
         {NavigationItems.map((item, index) => {
           return (
-            <p onClick={()=>scrollToSection(item.path)} key={index}>
+            <p key={index} onClick={() => scrollFunction(item.path)}>
               {item.title}
             </p>
           );
         })}
-      </nav>
-      <div className="client-login-button">
-        <button>Client Login</button>
       </div>
-      <GiHamburgerMenu className="burger-icon" onClick={()=>setSidebarDisplay(true)}/>
     </div>
   );
 }
 
-export default Header;
+export default Sidebar;

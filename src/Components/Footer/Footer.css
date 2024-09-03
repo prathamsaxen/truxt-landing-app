@@ -113,8 +113,11 @@
         }
         .location-wrapper {
             img{
-                width: 10%;
+                width: 5%;
                 margin: 0;
+            }
+            p{
+                font-size: 1rem;
             }
         }
     }

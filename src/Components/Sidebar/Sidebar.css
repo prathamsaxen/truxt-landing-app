@@ -1,0 +1,64 @@
+.Sidebar{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background-color: #003E75;
+    z-index: 111;
+    animation: sidebar-anim 1s;
+}
+
+.crossIcon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+    color: #54D6FF;
+    color: white;
+    p{
+        font: 1.5rem;
+        color: white;
+    }
+    /* animation: visibile-anim 1s 1s; */
+
+
+}
+
+@keyframes sidebar-anim {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.navigation-links{
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    p{
+        color: #54D6FF;
+        font-weight: 500;
+    }
+    animation: visibile-anim 2s ;
+}
+
+@keyframes visibile-anim {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}

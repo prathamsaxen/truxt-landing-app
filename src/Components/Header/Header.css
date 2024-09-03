@@ -64,6 +64,7 @@
             display: block;
             color: white;
             font-size: 1.7rem;
+            cursor: pointer;
         }
     }
 }
