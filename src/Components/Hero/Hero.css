@@ -37,3 +37,9 @@
     background-size: cover; 
     z-index: -1;
 }
+
+@media screen and (max-width:480px) {
+    .Hero h1{
+        font-size: 3rem;
+    }
+}

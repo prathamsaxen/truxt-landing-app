@@ -29,3 +29,24 @@
         line-height: 25px;
     }
 }
+
+@media screen and (max-width:480px) {
+    .card, .vision-card{
+        width: 100%;
+        margin-top: 0;
+        img{
+            margin: auto;
+            display: block;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            width: 100%;
+            font-size: .8rem;
+            line-height: 20px;
+        }
+    }
+    
+}

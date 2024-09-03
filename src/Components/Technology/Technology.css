@@ -28,7 +28,6 @@
     }
 
     .btn-container{
-        /* border: 2px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,4 +45,11 @@
         }
     }
     padding-bottom: 50px;
+}
+
+@media screen and (max-width:480px) {
+    .key-features{
+        flex-direction: column;
+    }
+    
 }

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../assets/header/truxt_logo_login.png";
 import ReferenceContext from "../../Context/ReferenceContext";
-// import NavigationItems from "../../Configuration/Configuration";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
@@ -54,6 +54,7 @@ function Header() {
       <div className="client-login-button">
         <button>Client Login</button>
       </div>
+      <GiHamburgerMenu className="burger-icon"/>
     </div>
   );
 }

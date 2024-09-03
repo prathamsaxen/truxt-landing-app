@@ -1,7 +1,5 @@
 .Header{
-    /* border: 2px solid red; */
     background-color: #003E75;
-    /* height: 50px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +23,6 @@
             cursor: pointer;
         }
         p:hover{
-            /* text-decoration: underline; */
             border-bottom: 2px solid white;
             color: white;
         }
@@ -42,5 +39,31 @@
     button:hover{
         background-color: white;
         color: #54D6FF;
+    }
+    
+    .burger-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .Header{
+        /* border: 2px solid red; */
+        padding: 5px;
+
+        img{
+            width: 35%;
+        }
+        nav{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+        .burger-icon{
+            display: block;
+            color: white;
+            font-size: 1.7rem;
+        }
     }
 }

@@ -1,6 +1,9 @@
 import vision_image from "../assets/truxt/our_vision_icon.svg";
-import story_image from "../assets/truxt/meet_truxt_image.png";
-import technology_image from "../assets/truxt/meet_truxt_image.png";
+import story_image from "../assets/truxt/our_story_icon.svg";
+import technology_image from "../assets/truxt/our_technology_icon.svg";
+
+import twitter_icon from "../assets/socialmedia/twitter_icon.svg";
+import linkedin_icon from "../assets/socialmedia/linked_in.svg";
 
 const cardsContent = [
   {
@@ -40,5 +43,35 @@ const VisionContent = [
       "Our advanced, pre-trained Generative AI Platform integrates diverse data for tailored, intelligent interactions, thereby redefining enterprise support efficiency with higher accuracy and eliminating hallucinations. It customized experiences to meet individual customer needs, ensuring each interaction in both intelligent and responsive",
   },
 ];
+
+const Links = [
+    {
+      path: "",
+      title: "Product",
+    },
+    {
+      path: "",
+      title: "About",
+    },
+    {
+      path: "",
+      title: "Contact",
+    },
+    {
+      path: "",
+      title: "Request a Demo",
+    },
+  ];
+  
+  const socialLinks=[
+    {
+      path:"",
+      icon:twitter_icon,
+    },
+    {
+      path:"",
+      icon:linkedin_icon,
+    }
+  ]
 
 export { cardsContent, VisionContent };

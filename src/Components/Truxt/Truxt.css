@@ -19,3 +19,13 @@
         gap: 40px;
     }
 }
+
+@media screen and (max-width:480px) {
+    .vision-container{
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        /* border: 2px solid red; */
+    }
+    
+}
