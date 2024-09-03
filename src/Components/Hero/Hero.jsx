@@ -8,11 +8,15 @@ function Hero() {
   return (
     <div className="Hero" ref={HomeRef}>
       <h1>
-        Empowering <br /> 
+        Empowering <br />
         <span>Customer Support</span>
         <br /> With <span>Gen AI</span>
       </h1>
-      <img src={scrollIcon} alt="Error in loading" onClick={()=>ContactRef.current.scrollIntoView({ behavior: "smooth" })}/>
+      <img
+        src={scrollIcon}
+        alt="Error in loading"
+        onClick={() => ContactRef.current.scrollIntoView({ behavior: "smooth" })}
+      />
     </div>
   );
 }

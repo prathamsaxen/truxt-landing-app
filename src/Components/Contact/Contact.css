@@ -12,18 +12,15 @@
 }
 
 .contact-form{
-    /* border: 2px solid red; */
     width: 90%;
     margin: auto;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    /* align-items: center; */
 }
 
 .half{
-    /* border: 2px solid black; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,13 +63,14 @@
     button{
         background-color: #003E75;
         color: white;
-        padding: 14px 40px;
-        border-radius: 20px;
         border: none;
         outline: none;
+        padding: 15px 40px;
+        border-radius: 20px;
         font-weight: 600;
-        font-size: 1.2rem;
+        font: 1em sans-serif;
         cursor: pointer;
+
     }
     button:hover{
         background-color: white;
