@@ -3,38 +3,8 @@ import "./Footer.css";
 import logo from "../../assets/header/truxt_logo_login.png";
 import mail_icon from "../../assets/footer/mail_icon.svg";
 import location_icon from "../../assets/footer/location_icon.svg";
-import twitter_icon from "../../assets/socialmedia/twitter_icon.svg";
-import linkedin_icon from "../../assets/socialmedia/linked_in.svg";
+import { socialLinks, Links } from "../../Configuration/Configuration";
 
-const Links = [
-  {
-    path: "",
-    title: "Product",
-  },
-  {
-    path: "",
-    title: "About",
-  },
-  {
-    path: "",
-    title: "Contact",
-  },
-  {
-    path: "",
-    title: "Request a Demo",
-  },
-];
-
-const socialLinks=[
-  {
-    path:"",
-    icon:twitter_icon,
-  },
-  {
-    path:"",
-    icon:linkedin_icon,
-  }
-]
 
 function Footer() {
   return (

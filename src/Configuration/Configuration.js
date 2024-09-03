@@ -45,33 +45,33 @@ const VisionContent = [
 ];
 
 const Links = [
-    {
-      path: "",
-      title: "Product",
-    },
-    {
-      path: "",
-      title: "About",
-    },
-    {
-      path: "",
-      title: "Contact",
-    },
-    {
-      path: "",
-      title: "Request a Demo",
-    },
-  ];
-  
-  const socialLinks=[
-    {
-      path:"",
-      icon:twitter_icon,
-    },
-    {
-      path:"",
-      icon:linkedin_icon,
-    }
-  ]
+  {
+    path: "",
+    title: "Product",
+  },
+  {
+    path: "",
+    title: "About",
+  },
+  {
+    path: "",
+    title: "Contact",
+  },
+  {
+    path: "",
+    title: "Request a Demo",
+  },
+];
 
-export { cardsContent, VisionContent };
+const socialLinks = [
+  {
+    path: "",
+    icon: twitter_icon,
+  },
+  {
+    path: "",
+    icon: linkedin_icon,
+  },
+];
+
+export { cardsContent, VisionContent, socialLinks, Links };

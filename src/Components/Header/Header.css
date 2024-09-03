@@ -48,11 +48,21 @@
 
 @media screen and (max-width:480px) {
     .Header{
-        /* border: 2px solid red; */
         padding: 5px;
 
         img{
             width: 35%;
+        }
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Header{
+        /* border: 2px solid red; */
+        padding: 15px;
+        img{
+            width: 50%;
         }
         nav{
             display: none;

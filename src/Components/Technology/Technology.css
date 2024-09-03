@@ -53,3 +53,9 @@
     }
     
 }
+
+@media screen and (max-width:768px) {
+    .key-features{
+        flex-direction: column;
+    }
+}

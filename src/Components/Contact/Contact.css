@@ -77,3 +77,9 @@
         color: #003E75;
     }
 }
+
+@media screen and (max-width:768px) {
+    .submit-button-container button{
+        padding: 8px 40px;
+    }
+}
