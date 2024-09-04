@@ -6,9 +6,12 @@ import arch_diagram from "../../assets/technology/tech_architecture.png";
 import ReferenceContext from "../../Context/ReferenceContext";
 import { cardsContent } from "../../Configuration/Configuration";
 
-
 function Technology() {
-  const { ProductRef } = useContext(ReferenceContext);
+  const RequestADemoHandler = () => {
+    ContactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const { ProductRef, ContactRef } = useContext(ReferenceContext);
   return (
     <div className="Technology" ref={ProductRef}>
       <h2>Our Technology</h2>
@@ -22,7 +25,7 @@ function Technology() {
         <img src={arch_diagram} alt="Error in loading..." />
       </div>
       <div className="btn-container">
-        <button>Request a Demo</button>
+        <button onClick={RequestADemoHandler}>Request a Demo</button>
       </div>
     </div>
   );
