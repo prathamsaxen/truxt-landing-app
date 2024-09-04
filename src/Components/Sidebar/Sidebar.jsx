@@ -10,10 +10,10 @@ function Sidebar({ setSidebarDisplay }) {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollFunction=(input)=>{
+  const scrollFunction = (input) => {
     scrollToSection(input);
     setSidebarDisplay(false);
-  }
+  };
 
   const NavigationItems = [
     {
@@ -41,7 +41,6 @@ function Sidebar({ setSidebarDisplay }) {
   return (
     <div className="Sidebar">
       <div className="crossIcon">
-        {/* <p>Truxt</p> */}
         <IoMdCloseCircleOutline onClick={() => setSidebarDisplay(false)} />
       </div>
 
@@ -53,6 +52,9 @@ function Sidebar({ setSidebarDisplay }) {
             </p>
           );
         })}
+      </div>
+      <div className="client-login-container">
+        <a href="http://app1.truxt.xyz/" target="_blank">Client Login</a>
       </div>
     </div>
   );
