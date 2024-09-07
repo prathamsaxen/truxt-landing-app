@@ -47,6 +47,12 @@
     flex-direction: column;
     z-index: 99900;
     background-color: white;
+    transition: all .1s;
+}
+
+.max-card-dimensions{
+    width: 65%;
+    height: 80%;
 }
 
 .un-auth-body {

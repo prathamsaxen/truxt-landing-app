@@ -15,7 +15,7 @@ const AI = ({ setAIContainer }) => {
   const [controller, setController] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isNewComponent, setIsNewComponent] = useState(false);
-  const [fullScreen, setFullScreen] = useState(false);
+  const [fullScreen, setFullScreen] = useState(true);
   const [messages, setMessages] = useState([
     {
       sender: "Bot",
@@ -77,7 +77,7 @@ const AI = ({ setAIContainer }) => {
 
   return (
     <div className="ai-wrapper">
-      <div className="un-auth-card">
+      <div className={`un-auth-card ${fullScreen ? "max-card-dimensions" : ""}`}>
         <div className="header">
           <p>Ask AI</p>
           <div className="header-buttons">
