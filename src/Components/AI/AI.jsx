@@ -15,7 +15,7 @@ const AI = ({ setAIContainer }) => {
   const [controller, setController] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isNewComponent, setIsNewComponent] = useState(false);
-  const [fullScreen, setFullScreen] = useState(true);
+  const [fullScreen, setFullScreen] = useState(false);
   const [messages, setMessages] = useState([
     {
       sender: "Bot",
