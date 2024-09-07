@@ -57,7 +57,7 @@
 }
 
 .messages-container {
-    height: 325px;
+    height: 90%;
     overflow-y: scroll;
     padding-right: 10px;
 }

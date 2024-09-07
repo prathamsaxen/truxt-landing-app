@@ -2,21 +2,15 @@ import React, { useState } from "react";
 import "./AI.css";
 import send from "../../assets/ai/send.svg";
 import { AiCard, UserCard } from "../ChatCard/ChatCard";
-import axios from "axios";
 import Loader from "../Loader/LoaderCard";
 import { LuMinimize } from "react-icons/lu";
 import { FiMaximize } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-
-const modes = [
-  "You are the top-tier AI Assistant. Provide the most accurate and comprehensive answers possible. Utilize any provided context to enhance your responses and ensure they are as helpful and relevant as possible.",
-  "You are an advanced AI Assistant. Provide detailed and accurate responses based on your general knowledge. Do not rely on any external context or additional information.",
-  "You can only answer questions about the provided context. If you know the answer but it is not based in the provided context, don't provide the answer, just state the answer is not in the context provided. Context information is below. And also provide which context you are using to generate the response.",
-];
+import getAnswer from "../../utils/GetAnswer";
 
 const AI = ({ setAIContainer }) => {
   const [inputValue, setInputValue] = useState("");
-  const [modeIndex, setModeIndex] = useState(0);
+  const [modeIndex, setModeIndex] = useState(2);
   const [loadingValue, setLoadingValue] = useState("");
   const [controller, setController] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -50,8 +44,9 @@ const AI = ({ setAIContainer }) => {
       setController(newController);
 
       try {
-        const response = await getAnswer(inputValue, newController);
+        const response = await getAnswer(inputValue, newController, modeIndex);
         const responseText = response?.data.choices[0].message.content;
+
         setMessages((prevMessages) => [
           ...prevMessages,
           { sender: "User", text: inputValue },
@@ -66,45 +61,10 @@ const AI = ({ setAIContainer }) => {
         ]);
       } finally {
         setIsLoading(false);
-        console.log(messages);
         setTimeout(() => {
           setIsNewComponent(false);
         }, 2000);
       }
-    }
-  };
-
-  const getAnswer = async (prompt, controller) => {
-    const body = {
-      messages: [
-        {
-          role: "system",
-          content: modes[modeIndex],
-        },
-        {
-          role: "user",
-          content: prompt,
-        },
-      ],
-      stream: false,
-      use_context: modeIndex === 1 ? false : true,
-      include_sources: modeIndex === 1 ? false : true,
-    };
-    try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_LLM_API}/v1/chat/completions`,
-        body,
-        {
-          signal: controller.signal,
-        }
-      );
-      return response;
-    } catch (err) {
-      if (err.name === "CanceledError") {
-        return "The request was stopped";
-      }
-      console.log(err);
-      return "Something went wrong please try again later";
     }
   };
 
@@ -149,7 +109,7 @@ const AI = ({ setAIContainer }) => {
             ))}
             {isLoading && <Loader request={loadingValue} />}
           </div>
-          <div className="select-container">
+          {/* <div className="select-container">
             <select
               id="dropdown-select"
               className="dropdown-select"
@@ -160,7 +120,7 @@ const AI = ({ setAIContainer }) => {
               <option value={1}>Web Only</option>
               <option value={2}>Internal Data only</option>
             </select>
-          </div>
+          </div> */}
           <div className="input-container">
             <textarea
               type="text"
@@ -180,7 +140,6 @@ const AI = ({ setAIContainer }) => {
           <p>
             Powered by
             <a href="http://dev.truxt.xyz/">Truxt</a>
-            {/* <img src={truxtHD} alt="logo" className="footer-logo"/> */}
           </p>
           <button className="class-button" onClick={handleClear}>
             Clear
