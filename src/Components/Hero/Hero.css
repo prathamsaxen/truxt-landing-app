@@ -9,12 +9,13 @@
     padding: 30px;
 
     h1{
-        color: white;
+        color: white !important;
         text-align: center;
         font-size: 4rem;
         font-weight: 400;
         span{
             font-weight: 800;
+            color: white !important;
         }
     }
     img{
