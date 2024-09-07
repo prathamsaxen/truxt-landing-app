@@ -1,0 +1,23 @@
+.ai-button {
+  /* border: 2px solid red; */
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: transparent;
+  width: max-content;
+  height: max-content;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  img {
+    width: 70%;
+    height: 50%;
+    cursor: pointer;
+  }
+  z-index: 222;
+  transition: all 0.3s;
+}
+
+.ai-button:hover {
+  transform: translate(-5%, -5%);
+}

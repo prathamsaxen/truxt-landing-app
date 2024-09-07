@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import ReferenceContext from "./Context/ReferenceContext";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import chat_icon from "./assets/chat_bot_icon.svg";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
 
   return (
     <div className="App">
+      <button className="ai-button">
+        <img src={chat_icon} alt="Error in loading icon" />
+      </button>
       <ReferenceContext.Provider value={{ HomeRef, ProductRef, AboutRef, ContactRef }}>
         {sidebarDispaly ? <Sidebar setSidebarDisplay={setSidebarDisplay} /> : null}
         <Header setSidebarDisplay={setSidebarDisplay} />
