@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import Header from "./Components/Header/Header";
-import Home from "./Pages/Home";
-import Docs from "./Pages/Docs";
+import Home from "./Pages/Home/Home";
+import Docs from "./Pages/Docs/Docs";
 import Footer from "./Components/Footer/Footer";
 import ReferenceContext from "./Context/ReferenceContext";
 import Sidebar from "./Components/Sidebar/Sidebar";
@@ -27,8 +27,8 @@ function Layout() {
         {sidebarDispaly ? <Sidebar setSidebarDisplay={setSidebarDisplay} /> : null}
         <Header setSidebarDisplay={setSidebarDisplay} />
         <Routes>
-          <Route path={"/"} element={<Home />} />
-          <Route path={"/docs"} element={<Docs />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/docs/*" element={<Docs />} />
         </Routes>
         <Footer />
       </ReferenceContext.Provider>

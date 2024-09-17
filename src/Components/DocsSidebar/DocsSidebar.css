@@ -1,0 +1,42 @@
+.docs-side-bar {
+    width: 400px;
+    border-right: 1px solid rgb(162, 162, 162);
+    display: flex;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        list-style-type: none;
+        h4{
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+    }
+}
+
+.docs-sidebar-listing {
+    margin: 40px 10px;
+}
+
+.docs-sidebar-list-item {
+    font-size: 1rem;
+    border-radius: 10px;
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(45, 45, 45);
+        display: block;
+    }
+}
+
+.docs-link{
+    padding: 6px 6px;
+    border-radius: 10px;
+}
+.active {
+    background-color: #baefff !important;
+}

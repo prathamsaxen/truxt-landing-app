@@ -1,0 +1,58 @@
+.docs-content-container{
+    width: calc(100vw - 400px);
+    display: flex;
+    flex-direction: column; 
+
+    div{
+        h2{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+        h4{
+            font-size: 1.4rem;
+        }
+        h5{
+            font-size: 1.2rem;
+        }
+        p{
+            line-height: 30px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.docs-headings{
+    font-weight: 800;
+    margin: 20px 0 5px 0;
+    color: #6FBBE9;
+}
+
+.doc-type-heading{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #003E75;
+}
+
+.docs-listing-item {
+    list-style-type: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 1.5em;
+}   
+
+.docs-listing-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    width: 15px;
+    height: 1px;
+    background: black;
+    top: 50%;
+    transform: translateY(-50%);
+}

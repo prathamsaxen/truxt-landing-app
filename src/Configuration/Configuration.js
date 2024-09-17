@@ -74,4 +74,41 @@ const socialLinks = [
   },
 ];
 
-export { cardsContent, VisionContent, socialLinks, Links };
+const docsLinks = [
+  {
+    type: "Overview",
+    links: [
+      {
+        text: "Getting Started",
+        path: "getting-started"
+      },
+      {
+        text: "Security",
+        path: "security"
+      },
+      {
+        text: "Services",
+        path: "services"
+      },
+      {
+        text: "Turxt As SAAS",
+        path: "turxt-as-saas"
+      }
+    ]
+  },
+  {
+    type: "Work with us",
+    links: [
+      {
+        text: "Add to your workspace",
+        path: "add-to-your-workspace"
+      },
+      {
+        text: "Integrate It With Your Business",
+        path: "integrate-it-with-your-business"
+      },
+    ]
+  }
+]
+
+export { cardsContent, VisionContent, socialLinks, Links, docsLinks };
