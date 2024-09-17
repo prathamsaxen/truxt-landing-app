@@ -57,7 +57,7 @@ print(f"Factorial of {number} is {factorial(number)}")`
                 },
                 {
                     type: "info",
-                    data: "Coding is an evolving field, and staying updated with new languages, frameworks, and tools is crucial. The tech industry changes rapidly, and developers must continuously learn to stay relevant."
+                    data: "Coding is an evolving field, and staying updated with new languages, frameworks, and tools is crucial. The tech industry changes rapidly, and developers must continuously learn to stay relevant. This is a sample data only."
                 },
             ]
         }
