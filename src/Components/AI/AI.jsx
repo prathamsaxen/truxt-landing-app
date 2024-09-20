@@ -93,7 +93,7 @@ const AI = ({ setAIContainer }) => {
           <div className="messages-container">
             <div className="disclaimer">
               <p>
-                This is a custom LLM for answering questions about Docker.Answers are based on the
+                This is a custom LLM for answering questions about Devops.Answers are based on the
                 contents of the documentation. This feature is experimental - rate the answers to
                 let us know what you think!
               </p>
