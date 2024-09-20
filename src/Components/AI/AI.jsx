@@ -10,7 +10,7 @@ import getAnswer from "../../utils/GetAnswer";
 
 const AI = ({ setAIContainer }) => {
   const [inputValue, setInputValue] = useState("");
-  const [modeIndex, setModeIndex] = useState(2);
+  const [modeIndex, setModeIndex] = useState(0);
   const [loadingValue, setLoadingValue] = useState("");
   const [controller, setController] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
