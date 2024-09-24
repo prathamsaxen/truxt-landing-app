@@ -10,6 +10,14 @@ function Header({ setSidebarDisplay }) {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const handleNavigation = (item) => {
+    if (typeof item === "string") {
+      navigate(item);
+    } else {
+      scrollToSection(item);
+    }
+  };
+
   const scrollToSection = (ref) => {
     if (location.pathname !== "/") {
       navigate("/");
@@ -25,6 +33,10 @@ function Header({ setSidebarDisplay }) {
     {
       path: HomeRef,
       title: "Home",
+    },
+    {
+      path: "/docs",
+      title: "Docs",
     },
     {
       path: ProductRef,
@@ -50,7 +62,7 @@ function Header({ setSidebarDisplay }) {
       <nav>
         {NavigationItems.map((item, index) => {
           return (
-            <p onClick={() => scrollToSection(item.path)} key={index}>
+            <p onClick={() => handleNavigation(item.path)} key={index}>
               {item.title}
             </p>
           );
