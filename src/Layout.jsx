@@ -30,7 +30,6 @@ function Layout() {
             <Route path="/docs/*" element={<Docs />} />
           </Routes>
         </Suspense>
-
         <Footer />
       </ReferenceContext.Provider>
     </div>

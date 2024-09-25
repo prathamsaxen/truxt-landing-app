@@ -1,13 +1,18 @@
 import React from "react";
 import "./Docs.css";
 import DocsSidebar from "../../Components/DocsSidebar/DocsSidebar";
-import Content from "../Content/Content";
+import GettingStarted from "../ContentPages/GettingStarted";
+import { Routes, Route } from "react-router-dom";
 
 function Docs() {
   return (
     <div className="Docs">
       <DocsSidebar />
-      <Content/>
+      <div className="content">
+        <Routes>
+          <Route path="/getting-started" element={<GettingStarted />} />
+        </Routes>
+      </div>
     </div>
   );
 }
