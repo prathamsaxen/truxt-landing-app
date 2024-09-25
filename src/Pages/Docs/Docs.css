@@ -1,12 +1,4 @@
-.docs-page {
-    width: 100%;
-    min-height: 100vh;
+.Docs{
     display: flex;
-    box-sizing: border-box;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-}
-
-.info-pages {
-    width: 100%;
+    background-color: #305d85;
 }

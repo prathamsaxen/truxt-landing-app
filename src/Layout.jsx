@@ -20,7 +20,7 @@ function Layout() {
   const [AIContainer, setAIContainer] = useState(false);
 
   return (
-    <div >
+    <div>
       <ReferenceContext.Provider value={{ HomeRef, ProductRef, AboutRef, ContactRef }}>
         {sidebarDispaly ? <Sidebar setSidebarDisplay={setSidebarDisplay} /> : null}
         <Header setSidebarDisplay={setSidebarDisplay} />
