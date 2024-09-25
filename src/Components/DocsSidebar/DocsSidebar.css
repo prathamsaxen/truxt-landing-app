@@ -1,6 +1,6 @@
 .docs-side-bar {
     width: 400px;
-    border-right: 1px solid rgb(162, 162, 162);
+    border-right: 2px solid rgb(162, 162, 162);
     display: flex;
     justify-content: center;
 
@@ -13,6 +13,7 @@
         h4{
             font-size: 1.1rem;
             margin: 20px 0 10px 0;
+            color: white;
         }
     }
 }
@@ -30,6 +31,8 @@
         font-weight: 600;
         color: rgb(45, 45, 45);
         display: block;
+        color: white;
+        color: gray;
     }
 }
 

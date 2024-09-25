@@ -35,7 +35,7 @@ function Header({ setSidebarDisplay }) {
       title: "Home",
     },
     {
-      path: "/docs",
+      path: "/docs/getting-started",
       title: "Docs",
     },
     {

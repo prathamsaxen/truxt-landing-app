@@ -1,8 +1,10 @@
 .docs-page {
-    min-height: 100vh;
     width: 100%;
     display: flex;
     box-sizing: border-box;
+    background-color: #003E75;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
 }
 
 .info-pages {
