@@ -1,25 +1,36 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { docsLinks } from "../../Configuration/Configuration";
 import "./DocsSidebar.css";
+import DocsSidebarData from "./DocsSidebarConfig";
 
 const DocsSidebar = () => {
   return (
     <div className="docs-side-bar">
-      <div className="docs-sidebar-listing">
-        {docsLinks.map((doc, index) => (
-          <li key={index}>
-            <h4 className="docs-sidebar-headings">{doc.type}</h4>
-            <ul>
-              {doc.links.map((link, linkIndex) => (
-                <li key={linkIndex} className="docs-sidebar-list-item">
-                  <NavLink to={`/docs/${link.path}`} className={"docs-link"}  activeclassname="active" >{link.text}</NavLink>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </div>
+      <ul>
+        {DocsSidebarData.map((item, index) => {
+          if (item.type === "heading") {
+            return (
+              <li key={index} className="heading">
+                <h2>{item.title}</h2>
+              </li>
+            );
+          }
+
+          if (item.type === "item") {
+            const IconComponent = item.icon;
+            return (
+              <li key={index} className="sidebar-item">
+                <NavLink to={item.link}>
+                  <IconComponent />
+                  {item.title}
+                </NavLink>
+              </li>
+            );
+          }
+
+          return null; 
+        })}
+      </ul>
     </div>
   );
 };

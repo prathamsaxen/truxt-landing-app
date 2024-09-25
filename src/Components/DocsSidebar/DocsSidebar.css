@@ -1,45 +1,44 @@
 .docs-side-bar {
-    width: 400px;
-    border-right: 2px solid rgb(162, 162, 162);
+  width: 25%;
+  font-family: QuickSand;
+  padding: 20px 25px;
+  overflow-y: auto;
+  h2 {
+    margin-bottom: 20px;
+    color: gray;
+  }
+
+  ul {
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-
-    ul {
-        list-style-type: none;
-    }
-
-    li {
-        list-style-type: none;
-        h4{
-            font-size: 1.1rem;
-            margin: 20px 0 10px 0;
-            color: white;
-        }
-    }
-}
-
-.docs-sidebar-listing {
-    margin: 40px 10px;
-}
-
-.docs-sidebar-list-item {
-    font-size: 1rem;
-    border-radius: 10px;
+    flex-direction: column;
+    gap: 5px;
 
     a {
-        text-decoration: none;
-        font-weight: 600;
-        color: rgb(45, 45, 45);
-        display: block;
-        color: white;
-        color: gray;
+      color: gray;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: gray;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 5px;
+      cursor: pointer;
     }
+    li:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
 }
 
-.docs-link{
-    padding: 6px 6px;
-    border-radius: 10px;
-}
-.active {
-    background-color: #baefff !important;
+li a.active {
+  border-radius: 5px;
+  color: #54d6ff;
+  background-color: #003e75;
+  color: white;
+  /* color: #54D6FF; */
+  svg path {
+    color: white;
+  }
 }
