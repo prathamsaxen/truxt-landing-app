@@ -31,50 +31,50 @@ const DocsSidebarData = [
     icon: MdPrivacyTip,
     link: "/docs/privacy"
   },
-  {
-    type: "heading",
-    title: "UI Components"
-  },
-  {
-    type: "item",
-    title: "React JS",
-    icon: FaReact,
-    link: "/docs/react-ui-component"
-  },
-  {
-    type: "item",
-    title: "JS Snippet",
-    icon: RiJavascriptFill,
-    link: "/docs/js-snippet"
-  },
-  {
-    type: "item",
-    title: "Common Settings",
-    icon: GrConfigure,
-    link: "/docs/common-settings"
-  },
-  {
-    type: "heading",
-    title: "Links"
-  },
-  {
-    type: "item",
-    title: "FAQS",
-    icon: FaQ,
-    link: "/docs/faq"
-  },
-  {
-    type: "item",
-    title: "Pricing",
-    icon: IoPricetagOutline,
-    link: "/docs/pricing"
-  },
-  {
-    type: "item",
-    title: "Projects",
-    icon: GrProjects,
-    link: "/docs/projects"
-  }
+  // {
+  //   type: "heading",
+  //   title: "UI Components"
+  // },
+  // {
+  //   type: "item",
+  //   title: "React JS",
+  //   icon: FaReact,
+  //   link: "/docs/react-ui-component"
+  // },
+  // {
+  //   type: "item",
+  //   title: "JS Snippet",
+  //   icon: RiJavascriptFill,
+  //   link: "/docs/js-snippet"
+  // },
+  // {
+  //   type: "item",
+  //   title: "Common Settings",
+  //   icon: GrConfigure,
+  //   link: "/docs/common-settings"
+  // },
+  // {
+  //   type: "heading",
+  //   title: "Links"
+  // },
+  // {
+  //   type: "item",
+  //   title: "FAQS",
+  //   icon: FaQ,
+  //   link: "/docs/faq"
+  // },
+  // {
+  //   type: "item",
+  //   title: "Pricing",
+  //   icon: IoPricetagOutline,
+  //   link: "/docs/pricing"
+  // },
+  // {
+  //   type: "item",
+  //   title: "Projects",
+  //   icon: GrProjects,
+  //   link: "/docs/projects"
+  // }
 ];
 
 export default DocsSidebarData;
