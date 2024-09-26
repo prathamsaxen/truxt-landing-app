@@ -19,7 +19,7 @@ function Layout() {
         <Suspense fallback={<CircularProgress />}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/docs/*" element={<Docs />} />
+            <Route path="/docs/:id" element={<Docs />} />
           </Routes>
         </Suspense>
       </ReferenceContext.Provider>
