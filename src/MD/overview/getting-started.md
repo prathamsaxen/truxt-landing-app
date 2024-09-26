@@ -5,6 +5,7 @@ Truxt.ai transforms your knowledge base into a robust LLM-powered AI assistant t
 
 ## What is Truxt?
 Truxt.ai allows you to create LLM-based chatbots that answer developer questions about your product. Once set up, your Truxt instance will focus solely on your software. This is made possible through Truxt's retrieval augmented generation (RAG) system, designed to optimize technical question answering.
+
 The Truxt.ai platform indexes all your technical knowledge sources and starts answering questions using your content. The most common use case for Truxt is deploying it directly to your developer community, where they can instantly find answers and solve problems faster.
 
 ## How does Truxt.AI work?
@@ -27,3 +28,5 @@ Truxt.ai is an end-to-end solution with integrations to deploy to your community
 
 ## How do I get started with Truxt?
 Currently, the Truxt.ai team will help you onboard onto the platform. Want access within 24 hours? Head to Truxt to sign up, and the team will be in touch to set you up with a demo instance.
+
+---
