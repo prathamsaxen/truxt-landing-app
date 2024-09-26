@@ -1,9 +1,6 @@
 import CircularProgress from "@mui/material/CircularProgress";
-import { useRef, useState, Suspense, lazy } from "react";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
+import { useRef, Suspense, lazy } from "react";
 import ReferenceContext from "./Context/ReferenceContext";
-import Sidebar from "./Components/Sidebar/Sidebar";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -16,21 +13,15 @@ function Layout() {
   const ProductRef = useRef(null);
   const AboutRef = useRef(null);
   const ContactRef = useRef(null);
-  const [sidebarDispaly, setSidebarDisplay] = useState(false);
-  const [AIContainer, setAIContainer] = useState(false);
-
   return (
     <div>
       <ReferenceContext.Provider value={{ HomeRef, ProductRef, AboutRef, ContactRef }}>
-        {sidebarDispaly ? <Sidebar setSidebarDisplay={setSidebarDisplay} /> : null}
-        <Header setSidebarDisplay={setSidebarDisplay} />
         <Suspense fallback={<CircularProgress />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/docs/*" element={<Docs />} />
           </Routes>
         </Suspense>
-        <Footer />
       </ReferenceContext.Provider>
     </div>
   );
