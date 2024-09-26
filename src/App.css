@@ -20,3 +20,7 @@
 .ai-button:hover {
   transform: translate(-5%, -5%);
 }
+
+body::-webkit-scrollbar{
+  display: none;
+}

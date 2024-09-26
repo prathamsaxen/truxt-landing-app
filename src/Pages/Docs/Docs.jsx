@@ -1,6 +1,7 @@
 import React from "react";
 import "./Docs.css";
 import DocsSidebar from "../../Components/DocsSidebar/DocsSidebar";
+import DocsHeader from "../../Components/DocsHeader/DocsHeader";
 import GettingStarted from "../ContentPages/GettingStarted";
 import { Routes, Route } from "react-router-dom";
 import Privacy from "../ContentPages/Privacy";
@@ -15,6 +16,8 @@ import Error404 from "../ContentPages/Error404";
 
 function Docs() {
   return (
+    <>
+    <DocsHeader/>
     <div className="Docs">
       <DocsSidebar />
       <div className="content">
@@ -32,6 +35,7 @@ function Docs() {
         </Routes>
       </div>
     </div>
+    </>
   );
 }
 

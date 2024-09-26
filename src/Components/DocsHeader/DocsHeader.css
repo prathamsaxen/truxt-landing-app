@@ -1,0 +1,17 @@
+.Docs-Header{
+    height: 100px;
+    background-color: #003e75;
+    display: flex;
+    align-items: center;
+}
+
+.left-docs-header{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+}
