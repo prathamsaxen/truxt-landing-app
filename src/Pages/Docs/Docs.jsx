@@ -5,6 +5,7 @@ import DocsHeader from "../../Components/DocsHeader/DocsHeader";
 import { useParams } from "react-router-dom";
 import ReactMarkDown from "react-markdown";
 import getMarkdownContent from "../../utils/FetchMarkDownContent";
+import DocContent from "../../Components/DocContent/DocContent";
 
 function Docs() {
   const { id } = useParams();
@@ -25,8 +26,11 @@ function Docs() {
       <DocsHeader />
       <div className="Docs">
         <DocsSidebar />
-        <div className="content">
-          <ReactMarkDown>{content}</ReactMarkDown>
+        <div className="content-layout">
+          <div className="content">
+            <ReactMarkDown>{content}</ReactMarkDown>
+          </div>
+          <DocContent content={content}/>
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 .doc-content {
-  width: 18%;
+  width: 20%;
   position: fixed;
   right: 0;
   height: 100%;
@@ -19,7 +19,6 @@
 
     li{
         font-weight: 600;
-        /* color: #FFFFFF; */
     }
     li:hover{
         color: #54D6FF;

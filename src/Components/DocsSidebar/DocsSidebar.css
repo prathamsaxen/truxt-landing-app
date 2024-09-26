@@ -5,6 +5,9 @@
   overflow-y: scroll;
   overflow-y: auto;
   padding: 40px 25px;
+  position: fixed;
+  background-color: white;
+  margin-top: 100px;
 
   h3 {
     margin-bottom: 10px;

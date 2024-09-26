@@ -15,9 +15,9 @@ const sidebarData = {
   uiComponent: {
     title: "UI Component",
     links: [
-      { name: "React", path: "/docs/react" },
+      { name: "React", path: "/docs/react-snippet" },
       { name: "JS Snippet", path: "/docs/js-snippet" },
-      { name: "Common Settings", path: "/docs/common-snippet" },
+      { name: "Common Settings", path: "/docs/common-settings" },
     ],
   },
   truxt: {

@@ -1,15 +1,14 @@
 import React from "react";
 import "./DocContent.css";
-const DocContent = () => {
+import { extractSubHeadings } from "../../utils/FetchMarkDownContent";
+const DocContent = ({ content }) => {
   return (
     <div className="doc-content">
       <h2>Page Content</h2>
       <ul>
-        <li>Overview</li>
-        <li>What is Truxt?</li>
-        <li>How Does Truxt.ai Works?</li>
-        <li>How do i get with started?</li>
-        <li></li>
+        {extractSubHeadings(content).map((item, _) => {
+          return <li>{item}</li>;
+        })}
       </ul>
     </div>
   );
