@@ -1,7 +1,6 @@
 import React from "react";
-import "./Common.css";
 
-const GettingStarted = () => {
+function Project() {
   return (
     <div className="content-layout">
       <section>
@@ -133,6 +132,6 @@ const GettingStarted = () => {
       </section>
     </div>
   );
-};
+}
 
-export default GettingStarted;
+export default Project;

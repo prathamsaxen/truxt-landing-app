@@ -1,7 +1,7 @@
 import React from "react";
 import "./Common.css";
 
-const GettingStarted = () => {
+const Privacy = () => {
   return (
     <div className="content-layout">
       <section>
@@ -135,4 +135,4 @@ const GettingStarted = () => {
   );
 };
 
-export default GettingStarted;
+export default Privacy;

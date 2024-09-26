@@ -1,7 +1,6 @@
-import React from "react";
-import "./Common.css";
+import React from 'react'
 
-const GettingStarted = () => {
+function WhyTruxt() {
   return (
     <div className="content-layout">
       <section>
@@ -132,7 +131,7 @@ const GettingStarted = () => {
         </p>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default GettingStarted;
+export default WhyTruxt
