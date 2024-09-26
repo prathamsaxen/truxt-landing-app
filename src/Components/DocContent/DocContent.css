@@ -1,0 +1,28 @@
+.doc-content {
+  width: 18%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  padding: 30px 40px;
+  h2{
+    color: #54D6FF;
+  }
+  ul{
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li{
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    li:hover{
+        color: #54D6FF;
+        cursor: pointer;
+    }
+  }
+}
