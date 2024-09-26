@@ -1,5 +1,3 @@
-
-
 # Common Settings
 
 ## Overview

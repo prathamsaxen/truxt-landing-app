@@ -1,4 +1,3 @@
-
 # Why Truxt?
 
 ## Overview

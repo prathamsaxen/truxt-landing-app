@@ -2,9 +2,9 @@
   display: flex;
 }
 
-.content-layout{
+.content-layout {
   margin-top: 100px;
-  min-height: 1000vh;
+  /* min-height: 1000vh; */
   display: flex;
   width: 62%;
   margin-left: 18%;
@@ -14,5 +14,28 @@
   width: 100%;
   height: 100%;
   padding: 30px 30px;
-}
 
+  h1,
+  h2,
+  h3 {
+    color: #003e75;
+    margin-bottom: 10px;
+  }
+  h1{
+    margin-bottom: 30px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 20px;
+
+    li{
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    margin-bottom: 20px;
+  }
+}

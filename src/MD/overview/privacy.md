@@ -21,5 +21,3 @@ We implement strong security measures to protect your data from unauthorized acc
 
 ## Your Rights
 You have the right to access, correct, or delete your personal data. For any inquiries regarding your data, please contact our support team.
-
----

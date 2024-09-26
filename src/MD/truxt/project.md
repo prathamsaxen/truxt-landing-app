@@ -1,4 +1,3 @@
-
 # Project
 
 ## Overview
@@ -15,5 +14,3 @@ We do not sell your personal information to third parties. We may share your inf
 
 ## Your Rights
 You have the right to access, correct, or delete your personal information. You may also have the right to object to or restrict certain processing of your personal information. Please contact us to exercise these rights.
-
----
