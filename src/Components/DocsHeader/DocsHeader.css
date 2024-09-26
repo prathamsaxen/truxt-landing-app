@@ -1,17 +1,61 @@
-.Docs-Header{
-    height: 100px;
-    background-color: #003e75;
-    display: flex;
-    align-items: center;
+.Docs-Header {
+  height: 100px;
+  background-color: #003e75;
+  display: flex;
+  align-items: center;
 }
 
-.left-docs-header{
-    height: 100%;
-    width: 18%;
-    display: flex;
-    padding-left: 25px;
-    align-items: center;
-    img{
-        width: 50%;
+.left-docs-header {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+  img {
+    width: 50%;
+  }
+  border-right: 2px solid gray;
+}
+
+.right-docs-header {
+  height: 100%;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  input {
+    padding: 10px 15px;
+    width: 30%;
+    outline: none;
+    background-color: #ffffff;
+    border: none;
+    color: #003e75;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  input::placeholder {
+    color: #003e75;
+    font-weight: 600;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+      }
+      a:hover{
+        color: #6FBBE9;
+      }
     }
+  }
 }
