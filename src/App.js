@@ -6,7 +6,7 @@ function App() {
   const ConfigurationAIClient = {
     API: process.env.REACT_APP_LLM_API,
     ButtonText: "ASK AI",
-    Disclaimer: `This is a custom LLM for answering questions about Docker.Answers are based on the
+    Disclaimer: `This is a custom LLM for answering questions about Devops.Answers are based on the
                   contents of the documentation. This feature is experimental - rate the answers to
                   let us know what you think!`,
   };
